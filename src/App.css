@@ -1,38 +1,81 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.edit {
+  background-color: #e8f0fe;
+}
+
+li input[type="text"] {
+  width: 150px;
+}
+
+li div {
+  display: flex;
+}
+
+li button {
+  margin-right: 5px;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card h2 {
+  margin-top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card p {
+  margin-bottom: 0;
+}
+
+.buttonsBar{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
